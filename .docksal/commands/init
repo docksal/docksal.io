@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Use 'fin develop' instead
+##
+## init is here for compliance
+
+echo "Use 'fin develop' for local development"

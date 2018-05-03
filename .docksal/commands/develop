@@ -1,0 +1,23 @@
+#!/bin/bash
+
+## Start local GatsbyJS development server with this site
+##
+## Starts development server.
+## Should be left running for realtime updates.
+## Stop it by Ctrl-C when done.
+
+# Start containers
+fin project start
+
+# Add own virtual host as 0.0.0.0 so that Gatsby could run development server on it
+# This is needed to workaround this https://github.com/gatsbyjs/gatsby/issues/5264
+echo "Please wiat. Preparing to start development server..."
+fin exec -T "cat /etc/hosts | grep $VIRTUAL_HOST >/dev/null 2>/dev/null"
+
+if [[ $? != 0 ]]; then
+    fin exec "echo 0.0.0.0 $VIRTUAL_HOST | sudo tee -a /etc/hosts >/dev/null"
+fi
+
+# Start develop server
+fin exec sudo su -c 'export NVM_DIR="/home/docker/.nvm"; . "$NVM_DIR/nvm.sh"; cd /var/www/docroot; gatsby develop --host=docs.docksal --port=80'
+

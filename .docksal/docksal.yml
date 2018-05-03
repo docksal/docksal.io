@@ -1,0 +1,9 @@
+# Assumes DOCKSAL_STACK=node
+version: "2.1"
+
+services:
+  cli:
+    image: ${COMPOSE_PROJECT_NAME_SAFE}_gatsby_develop
+    build: ${PROJECT_ROOT}/.docksal/services/cli/develop
+    ports:
+      - "80"
