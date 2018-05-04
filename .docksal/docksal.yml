@@ -3,5 +3,6 @@ version: "2.1"
 
 services:
   cli:
-    image: ${COMPOSE_PROJECT_NAME_SAFE}_gatsby_develop
-    build: ${PROJECT_ROOT}/.docksal/services/cli/develop
+    # Extend the stock cli image (see .docksal/services/cli/Dockerfile)
+    image: ${COMPOSE_PROJECT_NAME_SAFE}/cli
+    build: services/cli
