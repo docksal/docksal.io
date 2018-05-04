@@ -19,5 +19,5 @@ if [[ $? != 0 ]]; then
 fi
 
 # Start develop server
-fin exec sudo su -c 'export NVM_DIR="/home/docker/.nvm"; . "$NVM_DIR/nvm.sh"; cd /var/www/docroot; gatsby develop --host="'${VIRTUAL_HOST}'" --port=80'
+fin exec gatsby develop --host="${VIRTUAL_HOST}" --port=3000
 

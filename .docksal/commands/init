@@ -5,7 +5,7 @@
 ## init is here for compliance
 
 # Start containers
-fin project start
+fin project reset -f
 
 echo "Preparing to install dependencies..."
 cd "$PROJECT_ROOT/$DOCROOT"
