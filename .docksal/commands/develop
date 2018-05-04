@@ -11,7 +11,7 @@ fin project start
 
 # Add own virtual host as 0.0.0.0 so that Gatsby could run development server on it
 # This is needed to workaround this https://github.com/gatsbyjs/gatsby/issues/5264
-echo "Please wiat. Preparing to start development server..."
+echo "Preparing to start development server..."
 fin exec -T "cat /etc/hosts | grep $VIRTUAL_HOST >/dev/null 2>/dev/null"
 
 if [[ $? != 0 ]]; then
@@ -19,5 +19,5 @@ if [[ $? != 0 ]]; then
 fi
 
 # Start develop server
-fin exec sudo su -c 'export NVM_DIR="/home/docker/.nvm"; . "$NVM_DIR/nvm.sh"; cd /var/www/docroot; gatsby develop --host=docs.docksal --port=80'
+fin exec sudo su -c 'export NVM_DIR="/home/docker/.nvm"; . "$NVM_DIR/nvm.sh"; cd /var/www/docroot; gatsby develop --host="'${VIRTUAL_HOST}'" --port=80'
 
