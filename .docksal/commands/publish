@@ -14,7 +14,7 @@ fin exec gatsby build
 
 # Publish to Surge
 cd "$PROJECT_ROOT/$DOCROOT/public"
-surge "$(pwd)" "$SURGE_DOMAIN" --add "leonid.makarov@gmail.com"
+surge "$(pwd)" "$SURGE_DOMAIN"
 
 # Open in browser
 [[ $? == 0 ]] && [[ "$1" != "--no-browser" ]] &&

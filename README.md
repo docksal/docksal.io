@@ -6,7 +6,7 @@
 2. Run `fin init` and wait for it to start serving the site (it needs to keep running for realtime updates)
 3. Visit/modify the site
 
-`fin develop` - starts Getsby server again after you stopped the project
+`fin develop` - starts Gatsby server again after you stopped the project. Access it on port 3000.
 
 ## Building static site
 

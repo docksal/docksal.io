@@ -9,6 +9,8 @@
 # Start containers
 fin project start
 
+cd "$PROJECT_ROOT/$DOCROOT"
+
 # Add own virtual host as 0.0.0.0 so that Gatsby could run development server on it
 # This is needed to workaround this https://github.com/gatsbyjs/gatsby/issues/5264
 echo "Preparing to start development server..."
