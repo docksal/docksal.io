@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Stellar by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Stellar by HTML5 UP"
+    title: "Docksal, a web-development environment based on Docker for macOS, Windows and Ubuntu Linux",
+    author: "Docksal",
+    description: "Docksal Site"
   },
   pathPrefix: '/',
   plugins: [

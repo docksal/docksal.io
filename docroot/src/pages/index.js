@@ -6,7 +6,7 @@ import Waypoint from 'react-waypoint'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
-import pic01 from '../assets/images/pic01.jpg'
+import finInit from '../assets/images/fin-init-600-1.png'
 
 class Index extends React.Component {
   constructor(props) {
@@ -45,38 +45,38 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Installing Docksal</h2>
+                  <h2>Comprehensive automation</h2>
                 </header>
-                <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                <p>Create custom command to initialize your project in one step, run builds, compile or pack
+                  your projects files. Commands execute on your host or inside special cli container. Automate
+                using Bash, PHP or Node out of the bix or any other language with some additional work.</p>
                 <ul className="actions">
                   <li><Link to="/generic" className="button">Learn More</Link></li>
                 </ul>
               </div>
-              <span className="image"><img src={pic01} alt="" /></span>
+              <span className="image"><img src={finInit} alt="" /></span>
             </div>
           </section>
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>OS Support</h2>
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style-macos fab fa-apple"></span>
+                <h3>macOS</h3>
+                <p>Docker for Mac or Boot2Docker supported</p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style-linux fab fa-linux"></span>
+                <h3>Ubuntu Linux</h3>
+                <p>Ubuntu and Ubuntu-based distributions are supported out of the box.</p>
               </li>
               <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style5 fab fa-windows"></span>
+                <h3>Windows</h3>
+                <p>Babun or Ubuntu app for Windows 10. Docker for Windows or Boot2Docker.</p>
               </li>
             </ul>
             <footer className="major">
@@ -88,50 +88,67 @@ class Index extends React.Component {
 
           <section id="second" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Boilerplates</h2>
+              <p>Existing boilerplates for many Content Management Systems<br/> that you can spin up with one command within minutes.</p>
             </header>
             <ul className="statistics">
               <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
+                <span className="fab fa-drupal fa-3x"></span>
+                <strong>Drupal</strong> 7, 8
               </li>
               <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
+                <span className="fab fa-magento fa-3x"></span>
+                <strong>Magento</strong> with sample content
               </li>
               <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
+                <span className="fab fa-wordpress fa-3x"></span>
+                <strong>Wordpress</strong> With wp-cli
               </li>
               <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
+                <span className="fab fa-laravel fa-3x"></span>
+                <strong>Laravel</strong> Easy install
               </li>
               <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
+                <span className="fab fa-node fa-3x"></span>
+                <strong>Grav,</strong>Gatsby, Hugo
               </li>
             </ul>
-            <p className="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+            <p className="content">There is plenty of existing boilerplates or recipes, that you can use right away.
+              Say you always wanted to try out Drupal, Wordpress or Laravel. But installing them might be a major difficulty.
+            CMS installation process is usually pretty involving, even if the distributor makes an effort to make it easier.
+            With a single <span className="codeblock"><span className="fa fa-terminal fa-xs"></span>  fin project create</span> command you can easily spin up any of the above.</p>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li><Link to="/boilerplates" className="button">Learn More</Link></li>
               </ul>
             </footer>
           </section>
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Get Started</h2>
+              <p>Start with installing Docksal for your OS<br />
+              or check for more information on GitHub or Gitter.</p>
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li>
+                  <Link to="/installation" className="button special">
+                    <i className="fas fa-sliders-h fa-sm"></i> Install Docksal
+                  </Link>
+                </li>
+              </ul>
+              <ul className="actions">
+                <li>
+                  <a href="https://github.com/docksal/docksal" className="button small">
+                    <i className="fab fa-github-square fa-sm"></i> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="https://gitter.im/docksal/community-support" className="button small">
+                    <i className="fab fa-gitter fa-sm"></i> Chat on Gitter
+                  </a>
+                </li>
               </ul>
             </footer>
           </section>

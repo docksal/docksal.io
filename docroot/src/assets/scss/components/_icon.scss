@@ -74,6 +74,14 @@
 			color: _palette(accent5);
 		}
 
+		&.style-linux {
+			color: #444;
+		}
+
+		&.style-macos {
+			color: #b5b5b5;
+		}
+
 		@include breakpoint(xlarge) {
 			&.major {
 				&:before {
