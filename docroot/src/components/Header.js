@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../assets/images/logo-docksal-2.svg';
+import logo from '../assets/images/docksal-logo.png';
 
 const Header = (props) => (
     <header id="header" className="alt">

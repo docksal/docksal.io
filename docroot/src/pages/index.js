@@ -7,6 +7,7 @@ import Waypoint from 'react-waypoint'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import finInit from '../assets/images/fin-init-600-1.png'
+import imgKeepCalm from '../assets/images/keep-calm-and-raise-a.png'
 
 class Index extends React.Component {
   constructor(props) {
@@ -47,9 +48,16 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Comprehensive automation</h2>
                 </header>
-                <p>Create custom command to initialize your project in one step, run builds, compile or pack
-                  your projects files. Commands execute on your host or inside special cli container. Automate
-                using Bash, PHP or Node out of the bix or any other language with some additional work.</p>
+                <p>Create your own cross-platform custom commands to
+                  <ul>
+                    <li>initialize local copy of the project in one step</li>
+                    <li>run several complex builds in a sequence</li>
+                    <li>compile and pack your theme</li>
+                    <li>automate deployments to dev, stage or CI server</li>
+                  </ul>
+                  Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP
+                  or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
+                  images with your custom Dockerfile and pre-install your favorite tool.</p>
                 <ul className="actions">
                   <li><Link to="/generic" className="button">Learn More</Link></li>
                 </ul>
@@ -66,7 +74,7 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style-macos fab fa-apple"></span>
                 <h3>macOS</h3>
-                <p>Docker for Mac or Boot2Docker supported</p>
+                <p>Virtual Box and Docker for Mac supported</p>
               </li>
               <li>
                 <span className="icon major style-linux fab fa-linux"></span>
@@ -76,7 +84,7 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style5 fab fa-windows"></span>
                 <h3>Windows</h3>
-                <p>Babun or Ubuntu app for Windows 10. Docker for Windows or Boot2Docker.</p>
+                <p>Babun Shell or Ubuntu App (WSL). <br/>Virtual Box or Docker for Windows.</p>
               </li>
             </ul>
             <footer className="major">
@@ -89,7 +97,7 @@ class Index extends React.Component {
           <section id="second" className="main special">
             <header className="major">
               <h2>Boilerplates</h2>
-              <p>Existing boilerplates for many Content Management Systems<br/> that you can spin up with one command within minutes.</p>
+              <p>Ready to launch boilerplates for popular Content Management Systems.<br/> Spin up with a single command.</p>
             </header>
             <ul className="statistics">
               <li className="style1">
@@ -97,20 +105,20 @@ class Index extends React.Component {
                 <strong>Drupal</strong> 7, 8
               </li>
               <li className="style2">
-                <span className="fab fa-magento fa-3x"></span>
-                <strong>Magento</strong> with sample content
-              </li>
-              <li className="style3">
                 <span className="fab fa-wordpress fa-3x"></span>
                 <strong>Wordpress</strong> With wp-cli
               </li>
-              <li className="style4">
+              <li className="style3">
                 <span className="fab fa-laravel fa-3x"></span>
                 <strong>Laravel</strong> Easy install
               </li>
+              <li className="style4">
+                <span className="fab fa-magento fa-3x"></span>
+                <strong>Magento</strong> with sample content
+              </li>
               <li className="style5">
                 <span className="fab fa-node fa-3x"></span>
-                <strong>Grav,</strong>Gatsby, Hugo
+                <strong>Grav,</strong>Gatsby, Hugo, JAM
               </li>
             </ul>
             <p className="content">There is plenty of existing boilerplates or recipes, that you can use right away.
@@ -127,14 +135,14 @@ class Index extends React.Component {
           <section id="cta" className="main special">
             <header className="major">
               <h2>Get Started</h2>
-              <p>Start with installing Docksal for your OS<br />
-              or check for more information on GitHub or Gitter.</p>
+              <p>Check that your OS is compatible<br />
+              and select preferred install option</p>
             </header>
             <footer className="major">
               <ul className="actions">
                 <li>
                   <Link to="/installation" className="button special">
-                    <i className="fas fa-sliders-h fa-sm"></i> Install Docksal
+                    <i className="fas fa-sliders-h fa-sm"></i> Docksal Installation
                   </Link>
                 </li>
               </ul>
@@ -151,6 +159,35 @@ class Index extends React.Component {
                 </li>
               </ul>
             </footer>
+          </section>
+
+          <section id="contribute" className="main">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>You can help</h2>
+                </header>
+                <p>Docksal is the result of collective effort of people 
+                  contributing their time and dedication and organizations, 
+                  supporting those contributions. <br/>
+                  Something is not working? Missing a feature? You can help by
+                </p>
+                <ul>
+                  <li>testing Docksal in different environments</li>
+                  <li>reporting bugs in the <a href="https://github.com/docksal/docksal/issues">issue queue</a></li>
+                  <li>raising <a href="https://github.com/docksal/docksal/pulls?q=is%3Apr+is%3Aclosed">pull requests</a> to contribute code or documentation</li>
+                  <li>creating a <a href="https://github.com/docksal/addons">custom addon</a> and share it with a community</li>
+                </ul>
+                <ul className="actions">
+                  <li>
+                    <Link to="/contributors" className="button">
+                    <i className="fas fa-users fa-sm"></i> Contributors
+                    </Link>
+                    </li>
+                </ul>
+              </div>
+              <span className="image"><img src={imgKeepCalm} alt="" /></span>
+            </div>
           </section>
 
         </div>

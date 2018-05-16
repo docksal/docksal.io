@@ -7,7 +7,7 @@ const Footer = (props) => (
     <footer id="footer">
         <section>
             <h2>Our Contributors</h2>
-            <p>Docksal is the result of the collective effort of people contributing their time and skills and companies supporting those contributions.</p>
+            <p>Docksal is the result of collective effort of people contributing their time and dedication and organizations, supporting those contributions.</p>
             <ul className="actions">
                 <li><Link to="/contributors" className="button">Docksal Contributors</Link></li>
             </ul>
@@ -21,7 +21,7 @@ const Footer = (props) => (
                 {/*<dd>(000) 000-0000 x 0000</dd>*/}
                 <dt>Gitter</dt>
                 <dd><a href="https://gitter.im/docksal/community-support">Docksal Community Support</a></dd>
-                <dt>Email</dt>
+                <dt>E-mail</dt>
                 <dd>Leonid Makarov<br/><a href="mailto:todo@email.com">todo@email.com</a></dd>
                 <dd>Oleksii Chekulaiev<br/><a href="mailto:achekulaev@gmail.com">achekulaev@gmail.com</a></dd>
                 <dd>David Hernandez<br/><a href="mailto:todo@email.com">todo@email.com</a></dd>
@@ -34,7 +34,7 @@ const Footer = (props) => (
                 <li><a href="https://gitter.im/docksal/community-support" className="icon fab fa-gitter alt"><span className="label">Gitter</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; Docksal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p className="copyright">&copy; Docksal 2015-2018. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
 )
 

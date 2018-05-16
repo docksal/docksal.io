@@ -7,7 +7,6 @@
 /* Icon */
 
 	.icon {
-		@include icon;
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease-in-out',
 			'color #{_duration(transition)} ease-in-out'
@@ -37,6 +36,17 @@
 				border: solid 1px;
 				text-align: center;
 			}
+		}
+
+		&.a.major {
+			border: 0;
+			cursor: pointer !important;
+			background-clip: content-box;
+		}
+
+		&.a.major:hover {
+			background: rgba(219,219,219,1);
+			background-clip: content-box;
 		}
 
 		&.alt {
@@ -80,6 +90,10 @@
 
 		&.style-macos {
 			color: #b5b5b5;
+		}
+
+		&.style-ubuntu {
+			color: #E95420;
 		}
 
 		@include breakpoint(xlarge) {
