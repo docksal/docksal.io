@@ -1,7 +1,14 @@
-.codeblock {
-  border: 1px solid silver;
-  border-radius: 2px;
-  background: #eee;
-  padding: 1px 3px 1px 3px;
-  font-family: "Courier New";
+codeblock {
+  display: block;
+  border-radius: 6px;
+  background: #23241f;
+  color: #fefefe;
+  font-family: monospace;
+  font-size: smaller;
+  line-height: 1.4em;
+  padding: .5em;
+}
+
+code {
+  font-family: monospace;  
 }

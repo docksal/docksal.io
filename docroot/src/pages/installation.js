@@ -7,6 +7,8 @@ import Waypoint from 'react-waypoint'
 import HeaderInstallation from '../components/HeaderInstallation'
 import NavSubpages from '../components/NavSubpages'
 
+import imgVirtualBoxKext from '../assets/images/virtualbox-kernel-extension.png'
+
 class Installation extends React.Component {
   constructor(props) {
     super(props);
@@ -170,33 +172,70 @@ class Installation extends React.Component {
             </ul>
           </section>
 
+          {/*-- macOS with Virtualbox --*/}
           <section id="macos-virtualbox" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
               macOS with VirtualBox
             </h2>
-            <p>1. Download and Install VirtualBox</p>
-            <p>2. Enable Kernel extension </p>
-            <p>3. Install Docksal </p>
+            <p>With this method Docker will run inside the VM in VirtualBox.</p>
+            <h3>1. Download and Install VirtualBox</h3>
+            <p>
+              <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.2
+              </a>
+            </p>
+            <h3>2. Enable Kernel extension</h3>
+            <p>System Preferences > Security & Privacy<br/> 
+            If you do not see the Allow button it means the extension is already enabled.
+            <img src={imgVirtualBoxKext} width="100%" />
+            </p>
+            <h3>3. Install Docksal </h3>
+            <p>
+              Open Terminal app and run
+              <codeblock>curl -fsSL get.docksal.io</codeblock>
+            </p>
+            <h3>4. Start the VM</h3>
+            <codeblock>fin vm start</codeblock>
           </section>
 
+          {/*-- macOS with Docker for Mac --*/}
           <section id="macos-docker-for-mac" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
               macOS with Docker for Mac
             </h2>
-            <p>1. Download and Install Docker for Mac</p>
-            <p>2. Start Docker for Mac</p>
-            <p>3. Install Docksal</p>
+            <h3>1. Download and Install Docker for Mac</h3>
+            <p>
+              <a href="https://download.docker.com/mac/stable/Docker.dmg" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker for Mac
+              </a>
+            </p>
+            <h3>2. Start Docker for Mac</h3>
+            <p>Wait until it says "Docker is running" in the menubar icon menu.</p>
+            <h3>3. Install Docksal</h3>
+            Open Terminal app and run:
+            <codeblock>curl -fsSL get.docksal.io</codeblock>
           </section>
 
+          {/*-- Ubuntu --*/}
           <section id="linux-ubuntu" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
               Ubuntu Linux
             </h2>
-            <p>1. Check pre-requisites</p>
-            <p>2. Install Docksal</p>
+            <h3>1. Check pre-requisites</h3>
+            <p>By default Apache listens on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code>. This will prevent Docksal reverse proxy from running properly.</p>
+            <p>You can resolve it an any of the following ways:
+              <ol>
+              <li>Reconfigure Apache to listen on different host (e.g. <code>127.0.0.1:80</code> and <code>127.0.0.1:443</code>).</li>
+              <li>Reconfigure Apache to listen on different ports (e.g. <code>8080</code> and <code>4433</code>) </li>
+              <li>Stop and disable Apache</li>
+              </ol>
+            </p>
+            <h3>2. Install Docksal</h3>
+            Open Terminal app and run:
+            <codeblock>curl -fsSL get.docksal.io</codeblock>
           </section>
 
           <section id="windows-babun-virtualbox" className="main">
@@ -204,19 +243,48 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with Babun and VirtualBox
             </h2>
-            <p>1. Download and Install Babun</p>
-            <p>2. Download and Install VirtualBox</p>
-            <p>3. Install Docksal </p>
+            <h3>1. Download and Install Babun</h3>
+            <p>
+              <a href="http://babun.github.io/" className="button">
+                    <i className="fas fa-external-link-alt fa-sm"></i> Babun
+              </a>
+            </p>
+            {/*<h3>2. Download and Install VirtualBox</h3>
+            <p>
+              <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-Win.exe" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.2
+              </a>
+            </p>*/}
+            <h3>2. Install Docksal </h3>
+            <p>
+              Open <b>Babun</b> and run:
+              <codeblock>curl -fsSL get.docksal.io</codeblock>
+            </p>
+            <h3>3. Start the VM</h3>
+            In <b>Babun</b>:
+            <codeblock>fin vm start</codeblock>
           </section>
 
           <section id="windows-babun" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
-              Windows with Babun and Docker for Mac
+              Windows with Babun and Docker for Windows
             </h2>
-            <p>1. Download and Install Docker for Mac</p>
-            <p>2. Start Docker for Mac</p>
-            <p>3. Install Docksal </p>
+            <h3>1. Download and Install Babun</h3>
+            <p>
+              <a href="http://babun.github.io/" className="button">
+                    <i className="fas fa-external-link-alt fa-sm"></i> Babun
+              </a>
+            </p>
+            <h3>2. Download and Install Docker for Windows</h3>
+            <p>
+              <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker for Windows
+              </a>
+            </p>
+            <h3>3. Install Docksal </h3>
+            Open <b>Babun</b> app and run:
+            <codeblock>curl -fsSL get.docksal.io</codeblock>
           </section>
 
           <section id="windows-ubuntu" className="main">
@@ -224,7 +292,7 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with Ubuntu App and Docker for Mac
             </h2>
-            <p>1. Install Ubuntu App</p>
+            <h3>1. Install Ubuntu App</h3>
             <p>
             Part 1<br/>
             <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -232,9 +300,9 @@ class Installation extends React.Component {
             Part 2<br/>
             <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </p>
-            <p>2. Install and configure Docker for Windows</p>
+            <h3>2. Install and configure Docker for Windows</h3>
             <p><iframe width="700" height="525" src="https://www.youtube.com/embed/bQgaEUcuJ98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-            <p>3. Install Docksal</p>
+            <h3>3. Install Docksal</h3>
             <iframe width="700" height="525" src="https://www.youtube.com/embed/FJBN9-dGhyc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </section>
 
