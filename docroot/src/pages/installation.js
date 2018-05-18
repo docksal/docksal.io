@@ -8,6 +8,7 @@ import HeaderInstallation from '../components/HeaderInstallation'
 import NavSubpages from '../components/NavSubpages'
 
 import imgVirtualBoxKext from '../assets/images/virtualbox-kernel-extension.png'
+import imgDockerWinDrives from '../assets/images/docker-for-win-share-drives.png'
 
 class Installation extends React.Component {
   constructor(props) {
@@ -238,6 +239,7 @@ class Installation extends React.Component {
             <codeblock>curl -fsSL get.docksal.io</codeblock>
           </section>
 
+          {/*-- Windows with Virtual Box --*/}
           <section id="windows-babun-virtualbox" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
@@ -265,6 +267,7 @@ class Installation extends React.Component {
             <codeblock>fin vm start</codeblock>
           </section>
 
+          {/*-- Windows with Docker for Windows --*/}
           <section id="windows-babun" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
@@ -280,30 +283,47 @@ class Installation extends React.Component {
             <p>
               <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
                     <i className="fas fa-download fa-sm"></i> Docker for Windows
-              </a>
+              </a><br/>
+              Note: the computer will require logout and restart during the installation (<a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> screen recording</a> of Docker for Win install).
             </p>
-            <h3>3. Install Docksal </h3>
+            <h3>3. Configure Docker for Windows </h3>
+            <p>
+              Share your local drives with Docker for Windows:
+              <center><img src={imgDockerWinDrives} width="80%" /></center>
+            </p>
+            <h3>4. Install Docksal </h3>
             Open <b>Babun</b> app and run:
             <codeblock>curl -fsSL get.docksal.io</codeblock>
           </section>
 
+          {/*-- Windows with WSL --*/}
           <section id="windows-ubuntu" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with Ubuntu App and Docker for Mac
             </h2>
+            <p>Ubuntu application is previously known as Windows Subsystem for Linux (WSL)</p>
             <h3>1. Install Ubuntu App</h3>
-            <p>
-            Part 1<br/>
-            <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            Part 1. Start installation
+            <center>
+              <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
             <br/>
-            Part 2<br/>
-            <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </p>
-            <h3>2. Install and configure Docker for Windows</h3>
-            <p><iframe width="700" height="525" src="https://www.youtube.com/embed/bQgaEUcuJ98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+            Part 2. Finish Ubuntu installation
+            <center>
+              <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+            <br/>
+            <h3 id="configure-docker-for-win">2. Install and configure Docker for Windows</h3>
+            <center>
+              <iframe width="700" height="525" src="https://www.youtube.com/embed/bQgaEUcuJ98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+            <br/>
             <h3>3. Install Docksal</h3>
-            <iframe width="700" height="525" src="https://www.youtube.com/embed/FJBN9-dGhyc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <center>
+              <iframe width="700" height="525" src="https://www.youtube.com/embed/FJBN9-dGhyc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+            <br/>
           </section>
 
         </div>
