@@ -26,7 +26,7 @@ const Nav = (props) => (
                 </Scroll>
             </li>
             <li>
-                <a href="/docs">Docs</a>
+                <a href="https://docs.docksal.io">Docs</a>
             </li>
         </Scrollspy>
     </nav>

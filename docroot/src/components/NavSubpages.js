@@ -12,10 +12,10 @@ const NavSubpages = (props) => (
                 <a href="/installation">Installation</a>
             </li>
             <li>
-                <a href="/docs">Docs</a>
+                <a href="/boilerplates">Boilerplates</a>
             </li>
             <li>
-                <a href="/other">Other</a>
+                <a href="https://docs.docksal.io">Docs</a>
             </li>
         </Scrollspy>
     </nav>

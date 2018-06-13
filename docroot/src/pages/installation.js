@@ -51,7 +51,7 @@ class Installation extends React.Component {
                 <a href="#macos" className="icon major style-macos fab fa-apple a"></a>
                 <a href="#macos">
                   <h3>macOS</h3>
-                  <p>Docker Machine and Docker for Mac supported</p>
+                  <p>Boot2Docker or Docker for Mac</p>
                 </a>
               </li>
               <li>
@@ -65,7 +65,7 @@ class Installation extends React.Component {
                 <a href="#windows" className="icon major style5 fab fa-windows a"></a>
                 <a href="#windows">
                   <h3>Windows</h3>
-                  <p>Babun or Ubuntu app for Windows 10. Docker for Windows or Boot2Docker.</p>
+                  <p>Boot2Docker or Docker for Windows.</p>
                 </a>
               </li>
             </ul>
@@ -83,14 +83,14 @@ class Installation extends React.Component {
                 <a href="#macos-virtualbox" className="icon major style1 fas fa-box-open a"></a>
                 <a href="#macos-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p>Less convenient but 10-20% faster</p>
+                  <p>Less convenient, but faster</p>
                 </a>
               </li>
               <li>
                 <a href="#macos-docker-for-mac" className="icon major style5 fab fa-docker a"></a>
                 <a href="#macos-docker-for-mac">
                   <h3>Docker for Mac</h3>
-                  <p>A bit slower, but easier to use, maintain and update.</p>
+                  <p>Somewhat slower, but easier to use and update.</p>
                 </a>
               </li>
             </ul>
@@ -109,14 +109,14 @@ class Installation extends React.Component {
                 <a href="#babun" className="icon major style5 far fa-window-maximize a"/>
                 <a href="#babun">
                   <h3>Babun</h3>
-                  <p>Easier to install but less Linux-native. <br/>Windows 7, Windows 10.</p>
+                  <p>Easier to install, Cygwin. <br/>Windows 7, Windows 10.</p>
                 </a>
               </li>
               <li>
                 <a href="#windows-ubuntu" className="icon major style-ubuntu fab fa-linux a"/>
                 <a href="#windows-ubuntu">
                   <h3>Ubuntu App (WSL)</h3>
-                  <p>Longer install but better Linux shell.<br/>Windows 10</p>
+                  <p>Longer install, but real Unix shell.<br/>Windows 10</p>
                 </a>
               </li>
             </ul>
@@ -135,14 +135,14 @@ class Installation extends React.Component {
                 <a href="#windows-babun-virtualbox" className="icon major style1 fas fa-box-open a"></a>
                 <a href="#windows-babun-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p>Less convenient but ~20% faster</p>
+                  <p>Less convenient but faster</p>
                 </a>
               </li>
               <li>
                 <a href="#windows-babun" className="icon major style5 fab fa-docker a"></a>
                 <a href="#windows-babun">
                   <h3>Docker for Win</h3>
-                  <p>Somewhat slower, but easier to use, maintain and update.</p>
+                  <p>Somewhat slower, but easier to use and update.</p>
                 </a>
               </li>
             </ul>
@@ -194,7 +194,7 @@ class Installation extends React.Component {
             <h3>3. Install Docksal </h3>
             <p>
               Open Terminal app and run
-              <codeblock>curl -fsSL get.docksal.io</codeblock>
+              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
             </p>
             <h3>4. Start the VM</h3>
             <codeblock>fin vm start</codeblock>
@@ -216,7 +216,7 @@ class Installation extends React.Component {
             <p>Wait until it says "Docker is running" in the menubar icon menu.</p>
             <h3>3. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io</codeblock>
+            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
           </section>
 
           {/*-- Ubuntu --*/}
@@ -236,7 +236,7 @@ class Installation extends React.Component {
             </p>
             <h3>2. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io</codeblock>
+            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
           </section>
 
           {/*-- Windows with Virtual Box --*/}
@@ -260,7 +260,7 @@ class Installation extends React.Component {
             <h3>2. Install Docksal </h3>
             <p>
               Open <b>Babun</b> and run:
-              <codeblock>curl -fsSL get.docksal.io</codeblock>
+              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
             </p>
             <h3>3. Start the VM</h3>
             In <b>Babun</b>:
@@ -276,15 +276,19 @@ class Installation extends React.Component {
             <h3>1. Download and Install Babun</h3>
             <p>
               <a href="http://babun.github.io/" className="button">
-                    <i className="fas fa-external-link-alt fa-sm"></i> Babun
+                    <i className="fas fa-external-link-alt fa-sm"></i> Babun Site
               </a>
             </p>
             <h3>2. Download and Install Docker for Windows</h3>
             <p>
               <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
                     <i className="fas fa-download fa-sm"></i> Docker for Windows
-              </a><br/>
-              Note: the computer will require logout and restart during the installation (<a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> screen recording</a> of Docker for Win install).
+              </a>
+              <p>
+                <br/>
+                Computer will require logout and restart during the installation.<br/>
+                <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See screen recording</a> to know what to expect.
+              </p>
             </p>
             <h3>3. Configure Docker for Windows </h3>
             <p>
@@ -293,7 +297,7 @@ class Installation extends React.Component {
             </p>
             <h3>4. Install Docksal </h3>
             Open <b>Babun</b> app and run:
-            <codeblock>curl -fsSL get.docksal.io</codeblock>
+            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
           </section>
 
           {/*-- Windows with WSL --*/}

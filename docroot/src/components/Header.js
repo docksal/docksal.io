@@ -7,7 +7,7 @@ const Header = (props) => (
     <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
         <h1>Docksal</h1>
-        <p>All-purpose web-development environment <br/>based on <a href="https://docker.com">Docker</a> and Docker Compose.</p>
+        <h3>All-purpose web-development environment <br/>based on Docker and Docker Compose.</h3>
     </header>
 )
 

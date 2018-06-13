@@ -48,7 +48,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Comprehensive automation</h2>
                 </header>
-                <p>Create your own cross-platform custom commands to
+                <h3>Create your own cross-platform custom commands to
                   <ul>
                     <li>initialize local copy of the project in one step</li>
                     <li>run several complex builds in a sequence</li>
@@ -57,7 +57,7 @@ class Index extends React.Component {
                   </ul>
                   Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP
                   or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
-                  images with your custom Dockerfile and pre-install your favorite tool.</p>
+                  images with your custom Dockerfile and pre-install your favorite tool.</h3>
                 <ul className="actions">
                   <li><Link to="/generic" className="button">Learn More</Link></li>
                 </ul>
@@ -72,32 +72,33 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style-macos fab fa-apple"></span>
+                <a href="installation#macos" className="icon major style-macos fab fa-apple a"></a>
+                <a href="installation#macos">
                 <h3>macOS</h3>
-                <p>Virtual Box and Docker for Mac supported</p>
+                  <p>Boot2Docker or Docker for Mac</p>
+                </a>
               </li>
               <li>
-                <span className="icon major style-linux fab fa-linux"></span>
-                <h3>Ubuntu Linux</h3>
-                <p>Ubuntu and Ubuntu-based distributions are supported out of the box.</p>
+                <a href="installation#linux" className="icon major style-linux fab fa-linux a"></a>
+                <a href="installation#linux">
+                  <h3>Linux</h3>
+                  <p>Ubuntu, Ubuntu-based, Alpine</p>
+                </a>
               </li>
               <li>
-                <span className="icon major style5 fab fa-windows"></span>
+                <a href="installation#windows" className="icon major style5 fab fa-windows a"></a>
+                  <a href="#windows">
                 <h3>Windows</h3>
-                <p>Babun Shell or Ubuntu App (WSL). <br/>Virtual Box or Docker for Windows.</p>
+                    <p>Boot2Docker or Docker for Windows</p>
+                  </a>
               </li>
             </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
-            </footer>
           </section>
 
           <section id="second" className="main special">
             <header className="major">
               <h2>Boilerplates</h2>
-              <p>Ready to launch boilerplates for popular Content Management Systems.<br/> Spin up with a single command.</p>
+              <p>Launch popular Content Management Systems in minutes</p>
             </header>
             <ul className="statistics">
               <li className="style1">
@@ -121,10 +122,9 @@ class Index extends React.Component {
                 <strong>Grav,</strong>Gatsby, Hugo, JAM
               </li>
             </ul>
-            <p className="content">There is plenty of existing boilerplates or recipes, that you can use right away.
-              Say you always wanted to try out Drupal, Wordpress or Laravel. But installing them might be a major difficulty.
-            CMS installation process is usually pretty involving, even if the distributor makes an effort to make it easier.
-            With a single <span className="codeblock"><span className="fa fa-terminal fa-xs"></span>  fin project create</span> command you can easily spin up any of the above.</p>
+            <p className="content">You always wanted to try out Drupal, Wordpress or Laravel, but installing them is a hassle?
+            CMS installation process might be involving, even when authors make an effort to make it easier.
+            <codeblock><span className="fa fa-terminal fa-xs"></span>  fin project create</codeblock> With a single command you can easily spin up any of the above <a href="boilerplates">and more</a>.</p>
             <footer className="major">
               <ul className="actions">
                 <li><Link to="/boilerplates" className="button">Learn More</Link></li>
@@ -134,28 +134,16 @@ class Index extends React.Component {
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Get Started</h2>
-              <p>Check that your OS is compatible<br />
-              and select preferred install option</p>
+              <h2>Install Docksal</h2>
+              <h3>Check system requirements<br />
+              and select installation options</h3>
             </header>
             <footer className="major">
               <ul className="actions">
                 <li>
                   <Link to="/installation" className="button special">
-                    <i className="fas fa-sliders-h fa-sm"></i> Docksal Installation
+                    <i className="fas fa-cogs fa-sm"></i> Choose Options and Install
                   </Link>
-                </li>
-              </ul>
-              <ul className="actions">
-                <li>
-                  <a href="https://github.com/docksal/docksal" className="button small">
-                    <i className="fab fa-github-square fa-sm"></i> GitHub
-                  </a>
-                </li>
-                <li>
-                  <a href="https://gitter.im/docksal/community-support" className="button small">
-                    <i className="fab fa-gitter fa-sm"></i> Chat on Gitter
-                  </a>
                 </li>
               </ul>
             </footer>
@@ -167,27 +155,54 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>You can help</h2>
                 </header>
-                <p>Docksal is the result of collective effort of people 
+                <h3>Docksal is the result of collective effort of people 
                   contributing their time and dedication and organizations, 
                   supporting those contributions. <br/>
                   Something is not working? Missing a feature? You can help by
-                </p>
+                </h3>
                 <ul>
                   <li>testing Docksal in different environments</li>
                   <li>reporting bugs in the <a href="https://github.com/docksal/docksal/issues">issue queue</a></li>
                   <li>raising <a href="https://github.com/docksal/docksal/pulls?q=is%3Apr+is%3Aclosed">pull requests</a> to contribute code or documentation</li>
                   <li>creating a <a href="https://github.com/docksal/addons">custom addon</a> and share it with a community</li>
                 </ul>
-                <ul className="actions">
-                  <li>
-                    <Link to="/contributors" className="button">
-                    <i className="fas fa-users fa-sm"></i> Contributors
-                    </Link>
-                    </li>
-                </ul>
               </div>
               <span className="image"><img src={imgKeepCalm} alt="" /></span>
             </div>
+          </section>
+
+          <section id="maintainers" className="main special">
+            <header className="major">
+              <h2>Maintainers</h2>
+            </header>
+            <footer className="major">
+              <ul className="actions">
+                <li>
+                  <a className="a icon" href="https://github.com/lmakarov">
+                    <img className="image" src="https://avatars3.githubusercontent.com/u/1205005?s=64&v=4" /><br/>
+                    Leonid Makarov
+                  </a>
+                </li>
+                <li>
+                  <a className="a icon" href="https://github.com/achekulaev">
+                    <img className="image" src="https://avatars0.githubusercontent.com/u/402007?s=64&v=4" /><br/>
+                    Oleksii Chekulaiev
+                  </a>
+                </li>
+                <li>
+                  <a className="a icon" href="https://github.com/sean-e-dietrich">
+                    <img className="image" src="https://avatars2.githubusercontent.com/u/1564748?s=64&v=4" /><br/>
+                    Sean Dietrich
+                  </a>
+                </li>
+                <li>
+                  <a className="a icon" href="https://github.com/david-hernandez">
+                    <img className="image" src="https://avatars3.githubusercontent.com/u/1504038?s=64&v=4" /><br/>
+                    David Hernandez
+                  </a>
+                </li>
+              </ul>
+            </footer>
           </section>
 
         </div>
