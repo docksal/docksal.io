@@ -309,24 +309,24 @@ class Installation extends React.Component {
             <p>Ubuntu application is previously known as Windows Subsystem for Linux (WSL)</p>
             <h3>1. Install Ubuntu App</h3>
             Part 1. Start installation
-            <center>
+            <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
+            </div>
             <br/>
             Part 2. Finish Ubuntu installation
-            <center>
+            <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
+            </div>
             <br/>
             <h3 id="configure-docker-for-win">2. Install and configure Docker for Windows</h3>
-            <center>
+            <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/bQgaEUcuJ98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
+            </div>
             <br/>
             <h3>3. Install Docksal</h3>
-            <center>
+            <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/FJBN9-dGhyc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
+            </div>
             <br/>
           </section>
 
