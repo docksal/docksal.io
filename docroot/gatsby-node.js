@@ -4,6 +4,15 @@ const path = require("path")
 const select = require(`unist-util-select`)
 const fs = require(`fs-extra`)
 
+// https://github.com/gatsbyjs/gatsby/issues/5264#issuecomment-392947839
+exports.modifyWebpackConfig = ({config, stage}) => {
+  switch(stage) {
+    case 'develop':
+      config._config.output.publicPath = `/`;
+      break;
+  }
+};
+
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
