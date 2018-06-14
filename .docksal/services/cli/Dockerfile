@@ -1,5 +1,5 @@
 # Use a stock Docksal image as the base
-FROM docksal/cli:2.1-php7.1
+FROM docksal/cli:php7.1
 
 # Install additional global npm dependencies
 RUN set -e; \
