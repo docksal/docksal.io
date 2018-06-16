@@ -4,12 +4,17 @@
 ##
 ## init is here for compliance
 
+# Cleanup
+echo "Cleanup..."
+rm -rf "$PROJECT_ROOT/$DOCROOT/node_modules"
+rm -rf "$PROJECT_ROOT/$DOCROOT/package-lock.json"
+
 # Start containers
 fin project reset -f
 
 echo "Preparing to install dependencies..."
 cd "$PROJECT_ROOT/$DOCROOT"
-rm -f "$PROJECT_ROOT/$DOCROOT/node_modules" 2>/dev/null
 fin exec npm install
 
+# Start development server
 fin develop
