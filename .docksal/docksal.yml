@@ -5,5 +5,3 @@ services:
     # Extend the stock cli image (see .docksal/services/cli/Dockerfile)
     image: ${COMPOSE_PROJECT_NAME_SAFE}/cli
     build: services/cli
-    ports:
-      - 3000:3000
