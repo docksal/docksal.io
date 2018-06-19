@@ -216,7 +216,7 @@ class Installation extends React.Component {
             <p>Wait until it says "Docker is running" in the menubar icon menu.</p>
             <h3>3. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+            <codeblock>curl -fsSL get.docksal.io | DOCKER_NATIVE=1 bash</codeblock>
           </section>
 
           {/*-- Ubuntu --*/}
