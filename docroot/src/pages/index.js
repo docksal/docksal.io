@@ -123,7 +123,7 @@ class Index extends React.Component {
               </li>
             </ul>
             <p className="content">You always wanted to try out Drupal, Wordpress, or Laravel, but installing them is a hassle?
-            CMS installation process might be involving, even when authors make an effort to make it easier.
+            CMS installation process can be quite involved, even if authors make an effort to make it easier.
             <codeblock><span className="fa fa-terminal fa-xs"></span>  fin project create</codeblock> With a single command you can easily spin up any of the above <a href="boilerplates">and more</a>.</p>
             <footer className="major">
               <ul className="actions">
