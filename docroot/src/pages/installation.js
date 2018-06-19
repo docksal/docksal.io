@@ -58,14 +58,14 @@ class Installation extends React.Component {
                 <a href="#linux" className="icon major style-linux fab fa-linux a"></a>
                 <a href="#linux">
                   <h3>Ubuntu Linux</h3>
-                  <p>Ubuntu and Ubuntu-based distributions are supported out of the box.</p>
+                  <p>Ubuntu and Ubuntu-based distributions are supported out of the box</p>
                 </a>
               </li>
               <li>
                 <a href="#windows" className="icon major style5 fab fa-windows a"></a>
                 <a href="#windows">
                   <h3>Windows</h3>
-                  <p>Boot2Docker or Docker for Windows.</p>
+                  <p>Boot2Docker or Docker for Windows</p>
                 </a>
               </li>
             </ul>
@@ -90,7 +90,7 @@ class Installation extends React.Component {
                 <a href="#macos-docker-for-mac" className="icon major style5 fab fa-docker a"></a>
                 <a href="#macos-docker-for-mac">
                   <h3>Docker for Mac</h3>
-                  <p>Somewhat slower, but easier to use and update.</p>
+                  <p>Somewhat slower, but easier to use and update</p>
                 </a>
               </li>
             </ul>
@@ -179,7 +179,7 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
               macOS with VirtualBox
             </h2>
-            <p>With this method Docker will run inside the VM in VirtualBox.</p>
+            <p>With this method, Docker will run inside the VM in VirtualBox.</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
               <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg" className="button special ">
@@ -226,11 +226,11 @@ class Installation extends React.Component {
               Ubuntu Linux
             </h2>
             <h3>1. Check pre-requisites</h3>
-            <p>By default Apache listens on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code>. This will prevent Docksal reverse proxy from running properly.</p>
+            <p>By default, Apache listens on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code>. This will prevent Docksal reverse proxy from running properly.</p>
             <p>You can resolve it an any of the following ways:
               <ol>
-              <li>Reconfigure Apache to listen on different host (e.g. <code>127.0.0.1:80</code> and <code>127.0.0.1:443</code>).</li>
-              <li>Reconfigure Apache to listen on different ports (e.g. <code>8080</code> and <code>4433</code>) </li>
+              <li>Reconfigure Apache to listen on different host (e.g., <code>127.0.0.1:80</code> and <code>127.0.0.1:443</code>).</li>
+              <li>Reconfigure Apache to listen on different ports (e.g., <code>8080</code> and <code>4433</code>) </li>
               <li>Stop and disable Apache</li>
               </ol>
             </p>
