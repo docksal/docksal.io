@@ -53,9 +53,9 @@ class Index extends React.Component {
                     <li>initialize local copy of the project in one step</li>
                     <li>run several complex builds in a sequence</li>
                     <li>compile and pack your theme</li>
-                    <li>automate deployments to dev, stage or CI server</li>
+                    <li>automate deployments to dev, stage, or CI server</li>
                   </ul>
-                  Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP
+                  Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP,
                   or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
                   images with your custom Dockerfile and pre-install your favorite tool.</h3>
                 <ul className="actions">
@@ -122,8 +122,8 @@ class Index extends React.Component {
                 <strong>Grav,</strong>Gatsby, Hugo, JAM
               </li>
             </ul>
-            <p className="content">You always wanted to try out Drupal, Wordpress or Laravel, but installing them is a hassle?
-            CMS installation process might be involving, even when authors make an effort to make it easier.
+            <p className="content">You always wanted to try out Drupal, Wordpress, or Laravel, but installing them is a hassle?
+            CMS installation process can be quite involved, even if authors make an effort to make it easier.
             <codeblock><span className="fa fa-terminal fa-xs"></span>  fin project create</codeblock> With a single command you can easily spin up any of the above <a href="boilerplates">and more</a>.</p>
             <footer className="major">
               <ul className="actions">
@@ -156,7 +156,7 @@ class Index extends React.Component {
                   <h2>You can help</h2>
                 </header>
                 <h3>Docksal is the result of collective effort of people 
-                  contributing their time and dedication and organizations, 
+                  contributing their time and dedication, and organizations 
                   supporting those contributions. <br/>
                   Something is not working? Missing a feature? You can help by
                 </h3>
