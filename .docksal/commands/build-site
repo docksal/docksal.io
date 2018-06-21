@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$PROJECT_ROOT/$DOCROOT"
+fin exec gatsby build
