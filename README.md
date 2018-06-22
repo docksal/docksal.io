@@ -1,4 +1,4 @@
-# docksal.io site
+# docksal.io
 
 Docksal official website (built with [GatsbyJS](https://www.gatsbyjs.org/))
 
