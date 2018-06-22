@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Install nodejs dependencies
+##
+## Removes node_modules and runs `npm install` for a clean dependency installation
+
+cd "$PROJECT_ROOT/$DOCROOT"
+
+echo "Installing nodejs dependencies..."
+
+rm -rf node_modules
+fin exec npm install

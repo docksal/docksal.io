@@ -1,20 +1,15 @@
 #!/bin/bash
 
-## Use 'fin develop' instead
+## Initialize project stack
 ##
-## init is here for compliance
-
-# Cleanup
-echo "Cleanup..."
-rm -rf "$PROJECT_ROOT/$DOCROOT/node_modules"
-rm -rf "$PROJECT_ROOT/$DOCROOT/package-lock.json"
+## Initializes stack and starts a local development server
 
 # Start containers
+echo "Resetting stack..."
 fin project reset -f
 
-echo "Preparing to install dependencies..."
-cd "$PROJECT_ROOT/$DOCROOT"
-fin exec npm install
+# Install nodejs dependencies
+fin install
 
 # Start development server
 fin develop
