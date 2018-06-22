@@ -27,10 +27,10 @@
   ],
   "main": "n/a",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "./node_modules/.bin/gatsby develop",
-    "build": "./node_modules/.bin/gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
