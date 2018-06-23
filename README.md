@@ -16,4 +16,4 @@ To just (re)start the project stack and development server - use `fin develop` i
 
 - `fin init` - (re)initialize the project (start fresh, drops `node_modules` and and run `npm install`) 
 - `fin develop` - starts Gatsby server again (if the server or project stack was stopped). Does NOT do a reset
-- `fin buld-site` - Generates production GatsbyJS site build in `./public`
+- `fin build-site` - Generates production GatsbyJS site build in `./public`
