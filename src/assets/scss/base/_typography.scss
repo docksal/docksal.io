@@ -88,10 +88,16 @@
 
 	h2 {
 		font-size: 1.5em;
+		#page-installation & {
+			font-weight: bolder;
+		}
 	}
 
 	h3 {
 		font-size: 1.25em;
+		#page-installation & {
+			font-weight: bolder;
+		}
 	}
 
 	h4 {
@@ -212,6 +218,7 @@
 		hr {
 			border-bottom-color: _palette($p, border);
 		}
+		
 	}
 
 	@include color-typography;

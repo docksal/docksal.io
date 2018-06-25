@@ -76,21 +76,21 @@ class Index extends React.Component {
                 <a href="installation#macos" className="icon major style-macos fab fa-apple a"></a>
                 <a href="installation#macos">
                 <h3>macOS</h3>
-                  <p>Boot2Docker or Docker for Mac</p>
+                  <p>Docker for Mac or VirtualBox</p>
                 </a>
               </li>
               <li>
                 <a href="installation#linux" className="icon major style-linux fab fa-linux a"></a>
                 <a href="installation#linux">
                   <h3>Linux</h3>
-                  <p>Ubuntu, Ubuntu-based, Alpine</p>
+                  <p>Ubuntu, Mint, Debian, Fedora, CentOS and derivatives</p>
                 </a>
               </li>
               <li>
                 <a href="installation#windows" className="icon major style5 fab fa-windows a"></a>
                   <a href="#windows">
                 <h3>Windows</h3>
-                    <p>Boot2Docker or Docker for Windows</p>
+                    <p>Docker for Windows or VirtualBox</p>
                   </a>
               </li>
             </ul>
@@ -128,7 +128,7 @@ class Index extends React.Component {
             <codeblock><span className="fa fa-terminal fa-xs"></span>  fin project create</codeblock> With a single command you can easily spin up any of the above <a href="boilerplates">and more</a>.</p>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/boilerplates" className="button">Learn More</Link></li>
+                <li><Link to="/boilerplates" className="button special">Learn More</Link></li>
               </ul>
             </footer>
           </section>
@@ -142,8 +142,8 @@ class Index extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Link to="/installation" className="button special">
-                    <i className="fas fa-cogs fa-sm"></i> Choose Options and Install
+                  <Link to="/installation" className="button special hot">
+                    <i className="fas fa-cogs fa-sm"></i> Choose Options and Install Docksal
                   </Link>
                 </li>
               </ul>

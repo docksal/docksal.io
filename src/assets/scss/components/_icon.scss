@@ -96,6 +96,14 @@
 			color: #E95420;
 		}
 
+		&.style-mint {
+			color: #8AC752;
+		}
+
+		&.style-debian {
+			color: #D51253;
+		}
+
 		@include breakpoint(xlarge) {
 			&.major {
 				&:before {

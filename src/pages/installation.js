@@ -29,7 +29,7 @@ class Installation extends React.Component {
   render() {
 
     return (
-      <div>
+      <div id="page-installation">
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
         <HeaderInstallation />
@@ -57,8 +57,8 @@ class Installation extends React.Component {
               <li>
                 <a href="#linux" className="icon major style-linux fab fa-linux a"></a>
                 <a href="#linux">
-                  <h3>Ubuntu Linux</h3>
-                  <p>Ubuntu and Ubuntu-based distributions are supported out of the box</p>
+                  <h3>Linux</h3>
+                  <p>Debian and Fedora based distributions are supported out of the box</p>
                 </a>
               </li>
               <li>
@@ -75,7 +75,7 @@ class Installation extends React.Component {
             <header className="major">
               <h2>
                 <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
-                Choose macOS installation option
+                Docker installation options on macOS
               </h2>
             </header>
             <ul className="features">
@@ -83,7 +83,7 @@ class Installation extends React.Component {
                 <a href="#macos-virtualbox" className="icon major style1 fas fa-box-open a"></a>
                 <a href="#macos-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p>Less convenient, but faster</p>
+                  <p><b>Recommended.</b> Faster, but less convenient</p>
                 </a>
               </li>
               <li>
@@ -100,16 +100,16 @@ class Installation extends React.Component {
             <header className="major">
               <h2>
                 <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
-                Choose Linux shell for Windows
+                Windows needs Linux type Shell
               </h2>
             </header>
-            <p>Windows requires a Linux-type shell to run Docksal</p>
+            <p>Choose your Linux-type shell</p>
             <ul className="features">
               <li>
                 <a href="#babun" className="icon major style5 far fa-window-maximize a"/>
                 <a href="#babun">
                   <h3>Babun</h3>
-                  <p>Easier to install, Cygwin. <br/>Windows 7, Windows 10.</p>
+                  <p><b>Recommended</b>. Easier to install. <br/>Windows 7, Windows 10.</p>
                 </a>
               </li>
               <li>
@@ -126,16 +126,16 @@ class Installation extends React.Component {
             <header className="major">
               <h2>
                 <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
-                Choose Windows installation option
+                Docker installation options on Windows
               </h2>
             </header>
-            <p>You are going to use <a href="http://babun.github.io/">Babun</a> as Linux-type shell</p>
+            <p>Choose how you want to use Docker</p>
             <ul className="features">
               <li>
                 <a href="#windows-babun-virtualbox" className="icon major style1 fas fa-box-open a"></a>
                 <a href="#windows-babun-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p>Less convenient but faster</p>
+                  <p><b>Recommended.</b> Faster, but less convenient</p>
                 </a>
               </li>
               <li>
@@ -152,24 +152,47 @@ class Installation extends React.Component {
             <header className="major">
               <h2>
                 <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
-                Linux options
+                Choose your distribution
               </h2>
             </header>
             <ul className="features">
+            <li>
+                <a href="#linux-supported" className="icon major style-ubuntu fab fa-linux a"/>
+                <a href="#linux-supported">
+                  <h3>Ubuntu</h3>
+                </a>
+              </li>
               <li>
-                <a href="#linux-ubuntu" className="icon major style-ubuntu fab fa-linux a"/>
-                <a href="#linux-ubuntu">
-                  <h3>Ubuntu Linux</h3>
-                  <p>Everything supported and automated.</p>
+                <a href="#linux-supported" className="icon major style-mint fab fa-linux a"/>
+                <a href="#linux-supported">
+                  <h3>Mint</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#linux-supported" className="icon major style-debian fab fa-linux a"/>
+                <a href="#linux-supported">
+                  <h3>Debian</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#linux-supported" className="icon major style5 fab fa-linux a"/>
+                <a href="#linux-supported">
+                  <h3>Fedora</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#linux-supported" className="icon major style-linux fab fa-linux a"/>
+                <a href="#linux-supported">
+                  <h3>CentOS</h3>
                 </a>
               </li>
               <li>
                 <a href="#linux-other" className="icon major style-linux fab fa-linux a"/>
                 <a href="#linux-other">
                   <h3>Other distributions</h3>
-                  <p>Not fully supported. May involve manual steps</p>
                 </a>
               </li>
+
             </ul>
           </section>
 
@@ -219,25 +242,51 @@ class Installation extends React.Component {
             <codeblock>curl -fsSL get.docksal.io | DOCKER_NATIVE=1 bash</codeblock>
           </section>
 
-          {/*-- Ubuntu --*/}
-          <section id="linux-ubuntu" className="main">
+          {/*-- Linux --*/}
+          <section id="linux-supported" className="main">
+
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
-              Ubuntu Linux
+              Supported Linux distribution
             </h2>
             <h3>1. Check pre-requisites</h3>
-            <p>By default, Apache listens on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code>. This will prevent Docksal reverse proxy from running properly.</p>
-            <p>You can resolve it an any of the following ways:
-              <ol>
-              <li>Reconfigure Apache to listen on different host (e.g., <code>127.0.0.1:80</code> and <code>127.0.0.1:443</code>).</li>
-              <li>Reconfigure Apache to listen on different ports (e.g., <code>8080</code> and <code>4433</code>) </li>
-              <li>Stop and disable Apache</li>
-              </ol>
-            </p>
+            <ol>
+              <li>By default, Apache listens on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code>. This will prevent Docksal reverse proxy from running properly. You can resolve it an any of the following ways:
+                <ul>
+                  <li>Reconfigure Apache to listen on different host (e.g., <code>127.0.0.1:80</code> and <code>127.0.0.1:443</code>).</li>
+                  <li>Reconfigure Apache to listen on different ports (e.g., <code>8080</code> and <code>4433</code>) </li>
+                  <li>Stop and disable Apache</li>
+                </ul>
+              </li>
+              <li>Software. Check that you have
+                <ul>
+                  <li>curl</li>
+                  <li>sudo</li>
+                </ul>
+              </li>
+            </ol>
             <h3>2. Install Docksal</h3>
             Open Terminal app and run:
             <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
           </section>
+
+          {/*-- Linux --*/}
+          <section id="linux-other" className="main">
+            <h2>
+              <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
+              Other Linux distributions
+            </h2>
+            <h3>Compatibility</h3>
+            <p>If you cannot find your distribution, it does not mean it is not supported! Less known Debian or Fedora derivatives are most likely supported.</p>
+            <p>
+              Docker on Linux is being installed using official <a href="https://get.docker.com/">get.docker.com</a> script. If your distribution is not in the
+              list above, but <a href="https://get.docker.com/">get.docker.com</a> supports it, then it <b>is</b> supported.
+            </p>
+            <h3>Incompatible distributions</h3>
+            In case your distribution in not compatible with get.docker.com, you need to install latest stable Docker 
+            for you distribution first, and then <a href="#linux-supported">follow the steps for compatible distributions</a>.
+          </section>
+
 
           {/*-- Windows with Virtual Box --*/}
           <section id="windows-babun-virtualbox" className="main">
@@ -248,7 +297,7 @@ class Installation extends React.Component {
             <h3>1. Download and Install Babun</h3>
             <p>
               <a href="http://babun.github.io/" className="button">
-                    <i className="fas fa-external-link-alt fa-sm"></i> Babun
+                    <i className="fas fa-external-link-alt fa-sm"></i> Babun Site
               </a>
             </p>
             {/*<h3>2. Download and Install VirtualBox</h3>
@@ -280,16 +329,16 @@ class Installation extends React.Component {
               </a>
             </p>
             <h3>2. Download and Install Docker for Windows</h3>
+            <p></p>
             <p>
               <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
                     <i className="fas fa-download fa-sm"></i> Docker for Windows
               </a>
-              <p>
-                <br/>
-                Computer will require logout and restart during the installation.<br/>
-                <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See screen recording</a> to know what to expect.
               </p>
-            </p>
+              <b>Installing Docker for Windows</b>
+              <p>
+                Computer will require logout and restart during the installation. <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See screen recording</a> to know what to expect.
+              </p>
             <h3>3. Configure Docker for Windows </h3>
             <p>
               Share your local drives with Docker for Windows:

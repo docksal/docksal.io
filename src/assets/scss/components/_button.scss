@@ -88,6 +88,13 @@
 
 			&.special {
 				background-color: _palette(accent);
+				&.special.hot {
+					background: #e37682;
+					background: -moz-linear-gradient(left, #e37682 0%, #5f4d93 100%);
+					background: -webkit-linear-gradient(left, #e37682 0%,#5f4d93 100%);
+					background: linear-gradient(to right, #e37682 0%,#5f4d93 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e37682', endColorstr='#5f4d93',GradientType=1 );
+				}
 				color: _palette(invert, bg) !important;
 				box-shadow: none;
 
