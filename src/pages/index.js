@@ -59,7 +59,8 @@ class Index extends React.Component {
                   or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
                   images with your custom Dockerfile and pre-install your favorite tool.</h3>
                 <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
+                  {/*<li><Link to="/generic" className="button">Learn More</Link></li>*/}
+                  <li><a href="https://docs.docksal.io/en/master/fin/custom-commands/" className="button">Learn More</a></li>
                 </ul>
               </div>
               <span className="image"><img src={finInit} alt="" /></span>
