@@ -50,14 +50,14 @@ class Index extends React.Component {
                 </header>
                 <h3>Create your own cross-platform custom commands to
                   <ul>
-                    <li>initialize local copy of the project in one step</li>
+                    <li>initialize local project instance in one step</li>
                     <li>run several complex builds in a sequence</li>
                     <li>compile and pack your theme</li>
-                    <li>automate deployments to dev, stage, or CI server</li>
+                    <li>automate deployments to dev, stage, or CI servers</li>
                   </ul>
                   Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP,
                   or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
-                  images with your custom Dockerfile and pre-install your favorite tool.</h3>
+                  images with your custom Dockerfile and pre-install your favorite tools.</h3>
                 <ul className="actions">
                   {/*<li><Link to="/generic" className="button">Learn More</Link></li>*/}
                   <li><a href="https://docs.docksal.io/en/master/fin/custom-commands/" className="button">Learn More</a></li>
@@ -156,7 +156,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>You can help</h2>
                 </header>
-                <h3>Docksal is the result of collective effort of people 
+                <h3>Docksal is the result of a collective effort of people
                   contributing their time and dedication, and organizations 
                   supporting those contributions. <br/>
                   Something is not working? Missing a feature? You can help by
@@ -165,7 +165,7 @@ class Index extends React.Component {
                   <li>testing Docksal in different environments</li>
                   <li>reporting bugs in the <a href="https://github.com/docksal/docksal/issues">issue queue</a></li>
                   <li>raising <a href="https://github.com/docksal/docksal/pulls?q=is%3Apr+is%3Aclosed">pull requests</a> to contribute code or documentation</li>
-                  <li>creating a <a href="https://github.com/docksal/addons">custom addon</a> and share it with a community</li>
+                  <li>creating a <a href="https://github.com/docksal/addons">custom addon</a> and share it with the community</li>
                 </ul>
               </div>
               <span className="image"><img src={imgKeepCalm} alt="" /></span>

@@ -7,7 +7,7 @@ const Footer = (props) => (
     <footer id="footer">
         <section>
             <h2>Official Blog</h2>
-            <p>Great tutorials and tips on using Docksal and updates. Subscribe not to skip the new story!</p>
+            <p>Project updates, great tutorials and tips on using Docksal. Subscribe not to skip a new story!</p>
             <ul className="actions">
                 <li><a href="https://blog.docksal.io" className="button">Docksal Blog</a></li>
             </ul>
