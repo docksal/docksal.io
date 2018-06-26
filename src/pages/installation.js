@@ -116,7 +116,7 @@ class Installation extends React.Component {
                 <a href="#windows-ubuntu" className="icon major style-ubuntu fab fa-linux a"/>
                 <a href="#windows-ubuntu">
                   <h3>Ubuntu App (WSL)</h3>
-                  <p>Longer install, but real Unix shell.<br/>Windows 10</p>
+                  <p>Longer to install, but a real Unix shell.<br/>Windows 10</p>
                 </a>
               </li>
             </ul>
@@ -202,7 +202,7 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
               macOS with VirtualBox
             </h2>
-            <p>With this method, Docker will run inside the VM in VirtualBox.</p>
+            <p>With this method, Docker will run inside a VirtualBox VM</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
               <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg" className="button special ">
@@ -258,7 +258,7 @@ class Installation extends React.Component {
                   <li>Stop and disable Apache</li>
                 </ul>
               </li>
-              <li>Software. Check that you have
+              <li>Software. Check that you have:
                 <ul>
                   <li>curl</li>
                   <li>sudo</li>
@@ -279,11 +279,11 @@ class Installation extends React.Component {
             <h3>Compatibility</h3>
             <p>If you cannot find your distribution, it does not mean it is not supported! Less known Debian or Fedora derivatives are most likely supported.</p>
             <p>
-              Docker on Linux is being installed using official <a href="https://get.docker.com/">get.docker.com</a> script. If your distribution is not in the
+              Docker on Linux is installed using the official <a href="https://get.docker.com/">get.docker.com</a> script. If your distribution is not in the
               list above, but <a href="https://get.docker.com/">get.docker.com</a> supports it, then it <b>is</b> supported.
             </p>
             <h3>Incompatible distributions</h3>
-            In case your distribution in not compatible with get.docker.com, you need to install latest stable Docker 
+            In case your distribution in not compatible with <a href="https://get.docker.com/">get.docker.com</a>, you need to install the latest stable Docker
             for you distribution first, and then <a href="#linux-supported">follow the steps for compatible distributions</a>.
           </section>
 
@@ -337,7 +337,7 @@ class Installation extends React.Component {
               </p>
               <b>Installing Docker for Windows</b>
               <p>
-                Computer will require logout and restart during the installation. <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See screen recording</a> to know what to expect.
+                Windows will require a logout and restart during the installation. <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See this screen recording</a> to know what to expect.
               </p>
             <h3>3. Configure Docker for Windows </h3>
             <p>
@@ -355,14 +355,14 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with Ubuntu App and Docker for Mac
             </h2>
-            <p>Ubuntu application is previously known as Windows Subsystem for Linux (WSL)</p>
-            <h3>1. Install Ubuntu App</h3>
+            <p>Ubuntu application was previously known as Windows Subsystem for Linux (WSL)</p>
+            <h3>1. Install Ubuntu app</h3>
             Part 1. Start installation
             <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <br/>
-            Part 2. Finish Ubuntu installation
+            Part 2. Finish Ubuntu app installation
             <div className="videoWrapper">
               <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
