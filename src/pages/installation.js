@@ -27,10 +27,16 @@ class Installation extends React.Component {
   }
 
   render() {
+    const pageTitle = "Installation"
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteDescription = get(this.props, 'data.site.siteMetadata.description')
 
     return (
       <div id="page-installation">
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet
+          title={`${siteTitle} ${pageTitle}`}
+          meta={[{name: "description", content: `${siteDescription}`}]}
+        />
 
         <HeaderInstallation />
 
@@ -392,6 +398,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

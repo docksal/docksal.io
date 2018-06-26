@@ -9,9 +9,16 @@ import pic04 from '../assets/images/pic04.jpg'
 class Generic extends React.Component {
   render() {
 
+    const pageTitle = "Generic"
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteDescription = get(this.props, 'data.site.siteMetadata.description')
+
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet
+          title={`${siteTitle} ${pageTitle}`}
+          meta={[{name: "description", content: `${siteDescription}`}]}
+        />
 
         <HeaderGeneric />
         <div id="main">
@@ -37,6 +44,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

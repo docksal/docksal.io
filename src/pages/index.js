@@ -26,10 +26,15 @@ class Index extends React.Component {
   }
 
   render() {
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteDescription = get(this.props, 'data.site.siteMetadata.description')
 
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet
+          title={`${siteTitle}`}
+          meta={[{name: "description", content: `${siteDescription}`}]}
+        />
 
         <Header />
 
@@ -224,6 +229,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

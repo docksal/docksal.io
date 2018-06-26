@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Docksal, a web-development environment based on Docker for macOS, Windows and Ubuntu Linux",
-    author: "Docksal",
-    description: "Docksal Site"
+    title: "Docksal",
+    author: "Team Docksal",
+    description: "Docksal is a web-development environment based on Docker for macOS, Windows and Ubuntu Linux"
   },
   pathPrefix: '/',
   plugins: [
