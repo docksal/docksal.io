@@ -211,6 +211,33 @@ class Index extends React.Component {
             </footer>
           </section>
 
+          <section id="supporters" className="main special">
+            <header className="major">
+              <h2>Supporters</h2>
+            </header>
+            <footer className="major">
+              <ul className="actions">
+                <li>
+                  <a className="a icon" href="https://ffwagency.com">
+                    <img className="image" src="https://avatars1.githubusercontent.com/u/4947257?s=60&v=4" /><br/>
+                    FFW Agency
+                  </a>
+                </li>
+                <li>
+                  <a className="a icon" href="https://www.epam.com">
+                    <img className="image" src="https://avatars1.githubusercontent.com/u/1589802?s=60&v=4" /><br/>
+                    EPAM Systems
+                  </a>
+                </li>
+                <li>
+                  <a className="a icon" href="https://www.kanopistudios.com">
+                    <img className="image" src="https://avatars2.githubusercontent.com/u/8863513?s=60&v=4" /><br/>
+                    Kanopi Studios
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </section>
         </div>
 
       </div>
