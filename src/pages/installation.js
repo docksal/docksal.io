@@ -306,13 +306,18 @@ class Installation extends React.Component {
                     <i className="fas fa-external-link-alt fa-sm"></i> Babun Site
               </a>
             </p>
+            <h3>2. Windows 10. Enable SMB1 (<a href="https://docs.docksal.io/en/master/troubleshooting-smb/#windows-10-fall-creators-update-1709">Why?</a>)</h3>
+            <p>
+              This step will require reboot. On Windows 10 open Window Command Prompt as  Administrator and run:
+              <codeblock>dism /online /enable-feature /all /featurename:SMB1Protocol-Server</codeblock>
+            </p>
             {/*<h3>2. Download and Install VirtualBox</h3>
             <p>
               <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-Win.exe" className="button special ">
                     <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.2
               </a>
             </p>*/}
-            <h3>2. Install Docksal </h3>
+            <h3>3. Install Docksal </h3>
             <p>
               Open <b>Babun</b> and run:
               <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
