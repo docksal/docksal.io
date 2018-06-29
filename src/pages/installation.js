@@ -322,7 +322,7 @@ class Installation extends React.Component {
               Open <b>Babun</b> and run:
               <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
             </p>
-            <h3>3. Start the VM</h3>
+            <h3>4. Start the VM</h3>
             In <b>Babun</b>:
             <codeblock>fin vm start</codeblock>
           </section>
