@@ -61,7 +61,7 @@ class Index extends React.Component {
                     <li>automate deployments to dev, stage, or CI servers</li>
                   </ul>
                   Use  <i className="fas fa-terminal fa-xs"></i> Bash, <i className="fab fa-php fa-sm"></i> PHP,
-                  or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Dockal stock
+                  or <i className="fab fa-node-js fa-sm"></i> Node out of the box, or extend Docksal stock
                   images with your custom Dockerfile and pre-install your favorite tools.</h3>
                 <ul className="actions">
                   {/*<li><Link to="/generic" className="button">Learn More</Link></li>*/}
