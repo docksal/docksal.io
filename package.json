@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Docksal",
   "dependencies": {
-    "gatsby": "^1.9.235",
+    "gatsby": "^1.9.279",
     "gatsby-cli": "^1.1.58",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
@@ -20,7 +20,8 @@
     "lodash": "^4.17.5",
     "react-scroll-to-element": "^0.2.0",
     "react-scrollspy": "^3.3.5",
-    "react-waypoint": "^8.0.1"
+    "react-waypoint": "^8.0.1",
+    "webpack": "*"
   },
   "keywords": [
     "gatsby"

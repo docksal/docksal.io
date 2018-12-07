@@ -10,6 +10,7 @@ fin project reset -f
 
 # Install nodejs dependencies
 fin install
+fin exec npm install gatsby
 
 # Start development server
 fin develop
