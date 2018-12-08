@@ -211,8 +211,8 @@ class Installation extends React.Component {
             <p>With this method, Docker will run inside a VirtualBox VM</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
-              <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.2
+              <a href="http://download.virtualbox.org/virtualbox/5.2.20/VirtualBox-5.2.20-125813-OSX.dmg" className="button special">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.20
               </a>
             </p>
             <h3>2. Enable Kernel extension</h3>
