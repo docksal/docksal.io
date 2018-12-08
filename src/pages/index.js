@@ -179,9 +179,10 @@ class Index extends React.Component {
 
           <section id="maintainers" className="main special">
             <header className="major">
-              <h2>Maintainers</h2>
+              <h2>Team</h2>
             </header>
             <footer className="major">
+                <h3>Maintainers</h3>
               <ul className="actions">
                 <li>
                   <a className="a icon" href="https://github.com/lmakarov">
@@ -199,6 +200,15 @@ class Index extends React.Component {
                   <a className="a icon" href="https://github.com/sean-e-dietrich">
                     <img className="image" src="https://avatars2.githubusercontent.com/u/1564748?s=64&v=4" /><br/>
                     Sean Dietrich
+                  </a>
+                </li>
+                </ul>
+                <h3>Developer Advocates</h3>
+                <ul className="actions">
+                <li>
+                  <a className="a icon" href="https://github.com/shelane">
+                      <img className="image" src="https://avatars2.githubusercontent.com/u/2090502?s=64&v=4" /><br/>
+                      Shelane French
                   </a>
                 </li>
                 <li>
