@@ -118,6 +118,12 @@ class Boilerplates extends React.Component {
                   <strong>GatsbyJS</strong>
                 </a>
               </li>
+              <li className="style1">
+                <a className="icon" href="https://github.com/docksal/boilerplate-angular">
+                <span className="fab fa-angular fa-3x"></span>
+                <strong>Angular</strong>
+                </a>
+              </li>
               <li className="style2">
                 <a className="icon" href="https://github.com/docksal/example-hugo">
                   <span className="fab fa-node-js fa-3x"></span>
