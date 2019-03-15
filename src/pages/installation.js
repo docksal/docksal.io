@@ -223,7 +223,7 @@ class Installation extends React.Component {
             <h3>3. Install Docksal </h3>
             <p>
               Open Terminal app and run
-              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+              <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
             <h3>4. Start the VM</h3>
             <codeblock>fin vm start</codeblock>
@@ -245,7 +245,7 @@ class Installation extends React.Component {
             <p>Wait until it says "Docker is running" in the menubar icon menu.</p>
             <h3>3. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io | DOCKER_NATIVE=1 bash</codeblock>
+            <codeblock>DOCKER_NATIVE=1 bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
           </section>
 
           {/*-- Linux --*/}
@@ -273,7 +273,7 @@ class Installation extends React.Component {
             </ol>
             <h3>2. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+            <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
           </section>
 
           {/*-- Linux --*/}
@@ -315,7 +315,7 @@ class Installation extends React.Component {
             <h3>2. Install Docksal </h3>
             <p>
               Open <b>Babun</b> and run:
-              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+              <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
             <h3>3. Start the VM</h3>
             In <b>Babun</b>:
@@ -352,7 +352,7 @@ class Installation extends React.Component {
             </p>
             <h3>4. Install Docksal </h3>
             Open <b>Babun</b> app and run:
-            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+            <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
           </section>
 
           {/*-- Windows with WSL --*/}
