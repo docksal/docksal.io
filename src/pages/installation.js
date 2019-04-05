@@ -9,6 +9,7 @@ import NavSubpages from '../components/NavSubpages'
 
 import imgVirtualBoxKext from '../assets/images/virtualbox-kernel-extension.png'
 import imgDockerWinDrives from '../assets/images/docker-for-win-share-drives.png'
+import imgDockerWinExpose from '../assets/images/docker-for-win-expose-network.png'
 
 class Installation extends React.Component {
   constructor(props) {
@@ -57,7 +58,7 @@ class Installation extends React.Component {
                 <a href="#macos" className="icon major style-macos fab fa-apple a"></a>
                 <a href="#macos">
                   <h3>macOS</h3>
-                  <p>Boot2Docker or Docker for Mac</p>
+                  <p>VirtualBox or Docker Desktop</p>
                 </a>
               </li>
               <li>
@@ -71,7 +72,7 @@ class Installation extends React.Component {
                 <a href="#windows" className="icon major style5 fab fa-windows a"></a>
                 <a href="#windows">
                   <h3>Windows</h3>
-                  <p>Boot2Docker or Docker for Windows</p>
+                  <p>VirtualBox or Docker Desktop</p>
                 </a>
               </li>
             </ul>
@@ -89,46 +90,20 @@ class Installation extends React.Component {
                 <a href="#macos-virtualbox" className="icon major style1 fas fa-box-open a"></a>
                 <a href="#macos-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p><b>Recommended.</b> Faster, but less convenient</p>
+                  <p>Old school method</p>
                 </a>
               </li>
               <li>
-                <a href="#macos-docker-for-mac" className="icon major style5 fab fa-docker a"></a>
-                <a href="#macos-docker-for-mac">
-                  <h3>Docker for Mac</h3>
-                  <p>Somewhat slower, but easier to use and update</p>
+                <a href="#macos-docker-desktop" className="icon major style5 fab fa-docker a"></a>
+                <a href="#macos-docker-desktop">
+                  <h3>Docker Desktop</h3>
+                  <p><b>Recommended.</b> Easier to use</p>
                 </a>
               </li>
             </ul>
           </section>
 
           <section id="windows" className="main special">
-            <header className="major">
-              <h2>
-                <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#first"></a>&nbsp;
-                Windows needs Linux type Shell
-              </h2>
-            </header>
-            <p>Choose your Linux-type shell</p>
-            <ul className="features">
-              <li>
-                <a href="#babun" className="icon major style5 far fa-window-maximize a"/>
-                <a href="#babun">
-                  <h3>Babun</h3>
-                  <p><b>Recommended</b>. Easier to install. <br/>Windows 7, Windows 10.</p>
-                </a>
-              </li>
-              <li>
-                <a href="#windows-ubuntu" className="icon major style-ubuntu fab fa-linux a"/>
-                <a href="#windows-ubuntu">
-                  <h3>Ubuntu App (WSL)</h3>
-                  <p>Longer to install, but a real Unix shell.<br/>Windows 10</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          <section id="babun" className="main special">
             <header className="major">
               <h2>
                 <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
@@ -138,17 +113,17 @@ class Installation extends React.Component {
             <p>Choose how you want to use Docker</p>
             <ul className="features">
               <li>
-                <a href="#windows-babun-virtualbox" className="icon major style1 fas fa-box-open a"></a>
-                <a href="#windows-babun-virtualbox">
+                <a href="#windows-virtualbox" className="icon major style1 fas fa-box-open a"></a>
+                <a href="#windows-virtualbox">
                   <h3>VirtualBox</h3>
-                  <p><b>Recommended.</b> Faster, but less convenient</p>
+                  <p><b>Recommended.</b> Faster, allows launching Vagrant alongside</p>
                 </a>
               </li>
               <li>
-                <a href="#windows-babun" className="icon major style5 fab fa-docker a"></a>
-                <a href="#windows-babun">
-                  <h3>Docker for Win</h3>
-                  <p>Somewhat slower, but easier to use and update.</p>
+                <a href="#windows-docker-desktop" className="icon major style5 fab fa-docker a"></a>
+                <a href="#windows-docker-desktop">
+                  <h3>Docker Desktop</h3>
+                  <p>Easier to use, but you cannot use Virtualbox or VmWare with it.</p>
                 </a>
               </li>
             </ul>
@@ -211,8 +186,8 @@ class Installation extends React.Component {
             <p>With this method, Docker will run inside a VirtualBox VM</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
-              <a href="http://download.virtualbox.org/virtualbox/5.2.20/VirtualBox-5.2.20-125813-OSX.dmg" className="button special">
-                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.20
+              <a href="http://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-OSX.dmg" className="button special">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.26
               </a>
             </p>
             <h3>2. Enable Kernel extension</h3>
@@ -223,29 +198,29 @@ class Installation extends React.Component {
             <h3>3. Install Docksal </h3>
             <p>
               Open Terminal app and run
-              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+              <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>4. Start the VM</h3>
-            <codeblock>fin vm start</codeblock>
+            <h3>4. Start Dosksal</h3>
+            <codeblock>fin system start</codeblock>
           </section>
 
-          {/*-- macOS with Docker for Mac --*/}
-          <section id="macos-docker-for-mac" className="main">
+          {/*-- macOS with Docker Desktop --*/}
+          <section id="macos-docker-desktop" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
-              macOS with Docker for Mac
+              macOS with Docker Dekstop
             </h2>
-            <h3>1. Download and Install Docker for Mac</h3>
+            <h3>1. Download and Install Docker Desktop for Mac</h3>
             <p>
               <a href="https://download.docker.com/mac/stable/Docker.dmg" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker for Mac
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac
               </a>
             </p>
-            <h3>2. Start Docker for Mac</h3>
+            <h3>2. Start Docker Desktop</h3>
             <p>Wait until it says "Docker is running" in the menubar icon menu.</p>
             <h3>3. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io | DOCKER_NATIVE=1 bash</codeblock>
+            <codeblock>DOCKER_NATIVE=1 bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
           </section>
 
           {/*-- Linux --*/}
@@ -273,7 +248,7 @@ class Installation extends React.Component {
             </ol>
             <h3>2. Install Docksal</h3>
             Open Terminal app and run:
-            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+            <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
           </section>
 
           {/*-- Linux --*/}
@@ -295,94 +270,68 @@ class Installation extends React.Component {
 
 
           {/*-- Windows with Virtual Box --*/}
-          <section id="windows-babun-virtualbox" className="main">
+          <section id="windows-virtualbox" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
-              Windows with Babun and VirtualBox
+              Windows with VirtualBox
             </h2>
-            <h3>1. Download and Install Babun</h3>
+            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 18.04</b></h3>
             <p>
-              <a href="http://babun.github.io/" className="button">
-                    <i className="fas fa-external-link-alt fa-sm"></i> Babun Site
+              1.1. <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">
+                Enable WSL on Windows 10
+              </a>
+              <br/>
+              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q">
+                Install Ubuntu 18.04 app from Windows Store
               </a>
             </p>
-            {/*<h3>2. Download and Install VirtualBox</h3>
-            <p>
-              <a href="http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-Win.exe" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> VirtualBox 5.2.2
-              </a>
-            </p>*/}
             <h3>2. Install Docksal </h3>
             <p>
-              Open <b>Babun</b> and run:
-              <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+              Open <b>Ubuntu</b> shell and run:
+              <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>3. Start the VM</h3>
-            In <b>Babun</b>:
-            <codeblock>fin vm start</codeblock>
-          </section>
-
-          {/*-- Windows with Docker for Windows --*/}
-          <section id="windows-babun" className="main">
-            <h2>
-              <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
-              Windows with Babun and Docker for Windows
-            </h2>
-            <h3>1. Download and Install Babun</h3>
-            <p>
-              <a href="http://babun.github.io/" className="button">
-                    <i className="fas fa-external-link-alt fa-sm"></i> Babun Site
-              </a>
-            </p>
-            <h3>2. Download and Install Docker for Windows</h3>
-            <p></p>
-            <p>
-              <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker for Windows
-              </a>
-              </p>
-              <b>Installing Docker for Windows</b>
-              <p>
-                Windows will require a logout and restart during the installation. <a href="https://youtu.be/bQgaEUcuJ98"><i className="fas fa-external-link-alt fa-xs"></i> See this screen recording</a> to know what to expect.
-              </p>
-            <h3>3. Configure Docker for Windows </h3>
-            <p>
-              Share your local drives with Docker for Windows:
-              <center><img src={imgDockerWinDrives} width="80%" /></center>
-            </p>
-            <h3>4. Install Docksal </h3>
-            Open <b>Babun</b> app and run:
-            <codeblock>curl -fsSL get.docksal.io | bash</codeblock>
+            <h3>3. Start Docksal</h3>
+            <codeblock>fin system start</codeblock>
           </section>
 
           {/*-- Windows with WSL --*/}
-          <section id="windows-ubuntu" className="main">
+          <section id="windows-docker-desktop" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
-              Windows with Ubuntu App and Docker for Mac
+              Windows with Docker Desktop
             </h2>
-            <p>Ubuntu application was previously known as Windows Subsystem for Linux (WSL)</p>
-            <h3>1. Install Ubuntu app</h3>
-            Part 1. Start installation
-            <div className="videoWrapper">
-              <iframe width="700" height="525" src="https://www.youtube.com/embed/2Mk_wprFpzQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <br/>
-            Part 2. Finish Ubuntu app installation
-            <div className="videoWrapper">
-              <iframe width="700" height="525" src="https://www.youtube.com/embed/44UCMVZQT80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <br/>
-            <h3 id="configure-docker-for-win">2. Install and configure Docker for Windows</h3>
-            <div className="videoWrapper">
-              <iframe width="700" height="525" src="https://www.youtube.com/embed/bQgaEUcuJ98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <br/>
-            <h3>3. Install Docksal</h3>
-            <div className="videoWrapper">
-              <iframe width="700" height="525" src="https://www.youtube.com/embed/FJBN9-dGhyc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <br/>
+            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 18.04</b></h3>
+            <p>
+              1.1. <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">
+                Enable WSL on Windows 10
+              </a>
+              <br/>
+              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q">
+                Install Ubuntu 18.04 app from Windows Store
+              </a>
+            </p>
+            <h3>2. Download and Install Docker Desktop for Windows</h3>
+            <p></p>
+            <p>
+              <a href="https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Windows
+              </a>
+            </p>
+            <h3>3. Configure Docker Desktop on Windows </h3>
+            <p>
+              3.1. Share your local drives with Docker Desktop:
+              <center><img src={imgDockerWinDrives} width="80%" /></center>
+              <br/>
+              3.2. Share Docker Desktop port to the local network.
+              <center><img src={imgDockerWinExpose} width="80%" /></center>
+            </p>
+            <h3>4. Install Docksal </h3>
+            <p>
+              Open <b>Ubuntu</b> shell and run:
+              <codeblock>DOCKER_NATIVE=1 bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
+            </p>
+            <h3>5. Start Docksal</h3>
+            <codeblock>fin system start</codeblock>
           </section>
 
         </div>
