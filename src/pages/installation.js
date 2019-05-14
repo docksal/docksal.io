@@ -208,7 +208,7 @@ class Installation extends React.Component {
           <section id="macos-docker-desktop" className="main">
             <h2>
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#macos"></a>&nbsp;
-              macOS with Docker Dekstop
+              macOS with Docker Desktop
             </h2>
             <h3>1. Download and Install Docker Desktop for Mac</h3>
             <p>
