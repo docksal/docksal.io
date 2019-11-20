@@ -6,6 +6,15 @@
 
 /* Main */
 
+	#blog-post {
+		#main {
+			padding: 20px;
+		}
+		h1 {
+			text-align: center;
+		}
+	}
+
 	#main {
 		@include color(invert);
 		border-radius: _size(border-radius-main);
