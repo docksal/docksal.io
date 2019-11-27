@@ -218,12 +218,6 @@ class Index extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a className="a icon" href="https://github.com/david-hernandez">
-                    <img className="image" src="https://avatars3.githubusercontent.com/u/1504038?s=64&v=4" /><br/>
-                    David Hernandez
-                  </a>
-                </li>
-                <li>
                   <a className="a icon" href="https://github.com/lpeabody">
                       <img className="image" src="https://avatars2.githubusercontent.com/u/419534?s=64&v=4" /><br/>
                       Les Peabody
