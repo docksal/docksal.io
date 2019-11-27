@@ -206,15 +206,21 @@ class Index extends React.Component {
                 <h3>Developer Advocates</h3>
                 <ul className="actions">
                 <li>
+                  <a className="a icon" href="https://github.com/JDDoesDev">
+                      <img className="image" src="https://avatars2.githubusercontent.com/u/9932557?s=64&v=4" /><br/>
+                      J.D. Flynn
+                  </a>
+                </li>
+                <li>
                   <a className="a icon" href="https://github.com/shelane">
                       <img className="image" src="https://avatars2.githubusercontent.com/u/2090502?s=64&v=4" /><br/>
                       Shelane French
                   </a>
                 </li>
                 <li>
-                  <a className="a icon" href="https://github.com/david-hernandez">
-                    <img className="image" src="https://avatars3.githubusercontent.com/u/1504038?s=64&v=4" /><br/>
-                    David Hernandez
+                  <a className="a icon" href="https://github.com/lpeabody">
+                      <img className="image" src="https://avatars2.githubusercontent.com/u/419534?s=64&v=4" /><br/>
+                      Les Peabody
                   </a>
                 </li>
               </ul>
