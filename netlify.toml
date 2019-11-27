@@ -1,6 +1,6 @@
 # Latest release blog post
 [[redirects]]
 from = "/updates"
-to = "https://blog.docksal.io/docksal-1-12-0-release-b37c24d79082"
+to = "https://github.com/docksal/docksal/releases/tag/v1.13.0"
 status = 302
 force = true # Ensure that we always redirect the "from" path
