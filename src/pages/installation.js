@@ -186,8 +186,8 @@ class Installation extends React.Component {
             <p>With this method, Docker will run inside a VirtualBox VM</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
-              <a href="http://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-OSX.dmg" className="button special">
-                    <i className="fas fa-download fa-sm"></i> VirtualBox v5.2.26
+              <a href="https://download.virtualbox.org/virtualbox/6.1.10/VirtualBox-6.1.10-138449-OSX.dmg" className="button special">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox v6.1.10
               </a>
             </p>
             <h3>2. Enable Kernel extension</h3>
@@ -212,8 +212,8 @@ class Installation extends React.Component {
             </h2>
             <h3>1. Download and Install Docker Desktop for Mac</h3>
             <p>
-              <a href="https://download.docker.com/mac/stable/39773/Docker.dmg" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac v2.1.0.4
+              <a href="https://download.docker.com/mac/stable/45519/Docker.dmg" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac v2.3.0.3
               </a>
             </p>
             <h3>2. Start Docker Desktop</h3>
@@ -313,8 +313,8 @@ class Installation extends React.Component {
             <h3>2. Download and Install Docker Desktop for Windows</h3>
             <p></p>
             <p>
-              <a href="https://download.docker.com/win/stable/38240/Docker%20Desktop%20Installer.exe" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Windows v2.1.0.3
+              <a href="https://download.docker.com/win/stable/45519/Docker%20Desktop%20Installer.exe" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Windows v2.3.0.3
               </a>
             </p>
             <h3>3. Configure Docker Desktop on Windows </h3>
