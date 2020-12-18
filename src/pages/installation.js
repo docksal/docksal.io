@@ -200,7 +200,7 @@ class Installation extends React.Component {
               Open Terminal app and run
               <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>4. Start Dosksal</h3>
+            <h3>4. Start Docksal</h3>
             <codeblock>fin system start</codeblock>
           </section>
 
