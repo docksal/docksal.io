@@ -31,7 +31,7 @@ const Footer = (props) => (
                 <li><a href="https://gitter.im/docksal/community-support" className="icon fab fa-gitter alt"><span className="label">Gitter</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; Docksal 2015-2020. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p className="copyright">&copy; 2015-2021 Docksal Team. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
 )
 
