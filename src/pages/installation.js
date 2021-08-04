@@ -186,8 +186,8 @@ class Installation extends React.Component {
             <p>With this method, Docker will run inside a VirtualBox VM</p>
             <h3>1. Download and Install VirtualBox</h3>
             <p>
-              <a href="https://download.virtualbox.org/virtualbox/6.1.10/VirtualBox-6.1.10-138449-OSX.dmg" className="button special">
-                    <i className="fas fa-download fa-sm"></i> VirtualBox v6.1.10
+              <a href="https://download.virtualbox.org/virtualbox/6.1.22/VirtualBox-6.1.22-144080-OSX.dmg" className="button special">
+                    <i className="fas fa-download fa-sm"></i> VirtualBox v6.1.22
               </a>
             </p>
             <h3>2. Enable Kernel extension</h3>
@@ -200,8 +200,6 @@ class Installation extends React.Component {
               Open Terminal app and run
               <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>4. Start Docksal</h3>
-            <codeblock>fin system start</codeblock>
           </section>
 
           {/*-- macOS with Docker Desktop --*/}
@@ -212,8 +210,8 @@ class Installation extends React.Component {
             </h2>
             <h3>1. Download and Install Docker Desktop for Mac</h3>
             <p>
-              <a href="https://download.docker.com/mac/stable/45519/Docker.dmg" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac v2.3.0.3
+              <a href="https://desktop.docker.com/mac/stable/65384/Docker.dmg" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac v3.4.0
               </a>
             </p>
             <h3>2. Start Docker Desktop</h3>
@@ -275,14 +273,14 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with VirtualBox
             </h2>
-            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 18.04</b></h3>
+            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 20.04</b></h3>
             <p>
               1.1. <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">
                 Enable WSL on Windows 10
               </a>
               <br/>
-              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q">
-                Install Ubuntu 18.04 app from Windows Store
+              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71">
+                Install Ubuntu 20.04 app from Windows Store
               </a>
             </p>
             <h3>2. Install Docksal </h3>
@@ -290,8 +288,6 @@ class Installation extends React.Component {
               Open <b>Ubuntu</b> shell and run:
               <codeblock>bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>3. Start Docksal</h3>
-            <codeblock>fin system start</codeblock>
           </section>
 
           {/*-- Windows with WSL --*/}
@@ -300,21 +296,21 @@ class Installation extends React.Component {
               <a className="icon fas fa-arrow-circle-left fa-xs" title="Back" href="#windows"></a>&nbsp;
               Windows with Docker Desktop
             </h2>
-            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 18.04</b></h3>
+            <h3>1. Enable Windows Subsystem for Linux and install <b>Ubuntu 20.04</b></h3>
             <p>
               1.1. <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">
                 Enable WSL on Windows 10
               </a>
               <br/>
-              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q">
-                Install Ubuntu 18.04 app from Windows Store
+              1.2. <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71">
+                Install Ubuntu 20.04 app from Windows Store
               </a>
             </p>
             <h3>2. Download and Install Docker Desktop for Windows</h3>
             <p></p>
             <p>
-              <a href="https://download.docker.com/win/stable/45519/Docker%20Desktop%20Installer.exe" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Windows v2.3.0.3
+              <a href="https://desktop.docker.com/win/stable/65384/Docker%20Desktop%20Installer.exe" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Windows v3.4.0
               </a>
             </p>
             <h3>3. Configure Docker Desktop on Windows </h3>
@@ -330,8 +326,6 @@ class Installation extends React.Component {
               Open <b>Ubuntu</b> shell and run:
               <codeblock>DOCKER_NATIVE=1 bash &lt;(curl -fsSL https://get.docksal.io)</codeblock>
             </p>
-            <h3>5. Start Docksal</h3>
-            <codeblock>fin system start</codeblock>
           </section>
 
         </div>
