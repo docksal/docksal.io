@@ -210,8 +210,8 @@ class Installation extends React.Component {
             </h2>
             <h3>1. Download and Install Docker Desktop for Mac</h3>
             <p>
-              <a href="https://desktop.docker.com/mac/stable/65384/Docker.dmg" className="button special ">
-                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac v3.4.0
+              <a href="https://desktop.docker.com/mac/main/amd64/Docker.dmg" className="button special ">
+                    <i className="fas fa-download fa-sm"></i> Docker Desktop for Mac Intel chip
               </a>
             </p>
             <h3>2. Start Docker Desktop</h3>
